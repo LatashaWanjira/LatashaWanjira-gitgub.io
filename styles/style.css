@@ -12,6 +12,62 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 100px;
+  border: 0;
+  height: 2px;
+  margin: 0;
+}
+
+#sideNav i {
+  position: fixed;
+  top: 3em;
+  left: 3em;
+  z-index: 20;
+  color: white;
+  background: black;
+  border: 2px solid white;
+  padding: 0.5em;
+}
+
+#sideNavMenu {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 10;
+  height: 100vh;
+  width: 250px;
+  background-color: #4D4D4D;
+  color: white;
+  padding: 3em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.show {
+  left: 0
+}
+
+.hide {
+  left: -250px;
+}
+
+#sideNavMenu li {
+  padding: 2em 0;
+  font-size: 1.2em;
+}
+
 #landingScreen {
   height: 100vh;
   width: 100%;
@@ -48,4 +104,116 @@ a {
   font-size: 3em;
   position: absolute;
   bottom: 10%;
+}
+
+#aboutMe {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+#aboutMe hr {
+  background: black;
+}
+
+#projects {
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5vw 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects hr {
+  background: white;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-content: center;
+  grid-gap: 5em;
+  padding: 2em 0;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card {
+  position: relative;
+}
+
+.project-card .project-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(115, 115, 115, 0.95);
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.project-description h4 {
+  margin: 10px 0 0 0;
+}
+
+.project-card:hover .project-description {
+  opacity: 1;
+}
+
+#contacts {
+  background-color: #4D4D4D;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 15%;
+  /*font-size: 1.2em*/
+}
+
+#contacts hr {
+  background: white;
+}
+
+.email {
+  font-size: 1.2em;
+}
+
+#contacts .social {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+#contacts .social a {
+  padding: 0.5em;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 0.5em 0;
+}
+
+#footer p {
+  margin: 0;
 }

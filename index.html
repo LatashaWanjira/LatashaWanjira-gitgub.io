@@ -3,15 +3,29 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Latasha Wanjira</title>
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <link rel="stylesheet" href="styles/style.css">
 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="scripts/script.js"></script>
+
     </head>
 
     <body>
+        <div id="sideNav">
+            <a id="menuToggle"><i class="fas fa-bars"></i></a>
+            <ul id="sideNavMenu" class="hide">
+                <li><a href="/">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+            </ul>
+        </div>
         <div id="landingScreen">
             <h1>Latasha Wanjira</h1>
             <h3>Frontend Developer</h3>
@@ -21,6 +35,86 @@
                 <a href="https://medium.com/@latasha.wanjira" target="_blank"><i class="fab fa-medium"></i></a>
             </div>
             <a href="#aboutMe" class="next"><i class="fas fa-angle-down"></i></a>
+        </div>
+        <div id="aboutMe">
+            <h2>About Me</h2>
+            <hr>
+            <p>
+                A software developer and who believes I can change the world one user interface at a time.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+            <hr>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="images/genlynk.png" alt="Genlynk Solutions">
+                    <div class="project-description">
+                        <h4>Genlynk Solutions</h4>
+                        <p></p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/sadalsuud.png" alt="Sadalsuud Group">
+                    <div class="project-description">
+                        <h4>Sadalsuud Group</h4>
+                        <p></p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/disrupt.png" alt="Disruptive Solutions">
+                    <div class="project-description">
+                        <h4>Disruptive Solutions</h4>
+                        <p></p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/chao.png" alt="Chao and Friends Foundation">
+                    <div class="project-description">
+                        <h4>Chao and Friends Foundation</h4>
+                        <p></p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/bbd.png" alt="BigBoss Designs">
+                    <div class="project-description">
+                        <h4>BigBoss Designs</h4>
+                        <p>A website that catalogues men's suits that are sold by Big Boss Designs.</p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/revamp.png" alt="Revamp">
+                    <div class="project-description">
+                        <h4>Revamp</h4>
+                        <p>A website that allows front-end developers to showcase their talent by revamping already existing website user interfaces.</p>
+                        <a href="#">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts">
+            <h2>Get In Touch</h2>
+            <hr>
+            <p>For more information about me or if you'd like to work together, feel free to contact me on:</p>
+            <a href="mailto:latasha.wanjira@gmail.com" class="email">latasha.wanjira@gmail.com</a>
+            <div class="social">
+                <a href="https://github.com/latashawanjira" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/latasha-ndirangu-6a0aaa142/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@latasha.wanjira" target="_blank"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; Latasha Wanjira
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </p>
         </div>
     </body>
 
