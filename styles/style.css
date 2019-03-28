@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+#landingScreen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+#landingScreen h1 {
+  font-size: 5em;
+  margin: 0;
+  font-weight: 400;
+}
+
+#landingScreen h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 400;
+}
+
+#landingScreen .social {
+  margin-top: 1.5em;
+}
+
+#landingScreen .social a {
+  font-size: 2em;
+  padding: 2em .5em;
+}
+
+#landingScreen a.next {
+  font-size: 3em;
+  position: absolute;
+  bottom: 10%;
+}
