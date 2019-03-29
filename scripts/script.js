@@ -7,6 +7,8 @@ $(document).ready(function() {
   $('#sideNavMenu li').on('click', function() {
     $('#sideNavMenu').addClass("hide");
     $('#sideNavMenu').removeClass("show");
+    $('#menuToggle i').toggleClass("fa-times fa-bars");
+
   });
 
   // Adding active class to selected link
