@@ -6,10 +6,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 h2 {
@@ -33,7 +35,7 @@ hr {
   color: white;
   background: black;
   border: 2px solid white;
-  padding: 0.5em;
+  padding: 0.3em 0.5em;
 }
 
 #sideNavMenu {
@@ -63,8 +65,12 @@ hr {
   left: -250px;
 }
 
+.active {
+  border-bottom: 1px solid white;
+}
+
 #sideNavMenu li {
-  padding: 2em 0;
+  margin: 2em 0;
   font-size: 1.2em;
 }
 
@@ -83,6 +89,7 @@ hr {
   font-size: 5em;
   margin: 0;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 #landingScreen h3 {
@@ -93,11 +100,13 @@ hr {
 
 #landingScreen .social {
   margin-top: 1.5em;
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
 }
 
 #landingScreen .social a {
   font-size: 2em;
-  padding: 2em .5em;
 }
 
 #landingScreen a.next {
@@ -186,7 +195,6 @@ hr {
   align-items: center;
   color: white;
   padding: 0 15%;
-  /*font-size: 1.2em*/
 }
 
 #contacts hr {
@@ -216,4 +224,92 @@ hr {
 
 #footer p {
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /*LANDING SCREEN*/
+  #landingScreen {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 20%;
+  }
+  #landingScreen h1 {
+    font-size: 5.2em;
+  }
+  #landingScreen .social {
+    width: 30%;
+  }
+  /*ABOUT ME*/
+  #aboutMe {
+    padding: 5em 20%;
+    height: auto;
+  }
+  /*PROJECTS*/
+  #projects {
+    padding: 4em 20%;
+  }
+  .project-cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 2em;
+  }
+  .project-card .project-description {
+    position: relative;
+    background: none;
+    opacity: 1;
+  }
+  /*CONTACTS*/
+  #contacts {
+    height: 30vh;
+    padding: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h2 {
+    font-size: 2.2em;
+  }
+  /*SIDE NAVBAR*/
+  #sideNavMenu {
+    width: 170px;
+  }
+  .hide {
+    left: -170px;
+  }
+  #sideNav i {
+    top: 1.5em;
+    left: 1.5em;
+  }
+  /*LANDING SCREEN*/
+  #landingScreen h1 {
+    font-size: 3em;
+  }
+  #landingScreen h3 {
+    font-size: 1.5em;
+  }
+  #landingScreen .social {
+    width: 40%;
+  }
+  #landingScreen .social a {
+    font-size: 1.5em;
+  }
+  #landingScreen a.next {
+    font-size: 2em;
+  }
+  /*ABOUT ME*/
+  #aboutMe {
+    padding: 5em 10%;
+    height: auto;
+  }
+  /*PROJECTS*/
+  #projects {
+    padding: 0 10%;
+  }
+  /*CONTACTS*/
+  #contacts {
+    height: 50vh;
+    padding: 0 10%;
+  }
+  .email {
+    font-size: 1em;
+  }
 }

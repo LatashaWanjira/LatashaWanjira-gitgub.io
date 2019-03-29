@@ -6,4 +6,9 @@ $(document).ready(function() {
     $('#sideNavMenu').addClass("hide");
     $('#sideNavMenu').removeClass("show");
   });
+
+  $("#sideNavMenu a").click(function() {
+    $(this).addClass("active");
+    $("#sideNavMenu a").not(this).removeClass("active");
+  })
 });
