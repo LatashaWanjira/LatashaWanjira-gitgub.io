@@ -39,14 +39,17 @@ hr {
 
 .fa-github:hover {
   color: #333333;
+  transform: scale(1.5);
 }
 
 .fa-linkedin:hover {
   color: #0077b5;
+  transform: scale(1.5);
 }
 
 .fa-medium:hover {
   color: #00ab6c;
+  transform: scale(1.5);
 }
 
 #sideNav i {
@@ -132,9 +135,12 @@ hr {
 }
 
 #landingScreen a.next {
-  font-size: 3em;
   position: absolute;
   bottom: 10%;
+}
+
+a.next {
+  font-size: 3em;
 }
 
 #aboutMe {
@@ -264,6 +270,10 @@ li.active-btn a {
   justify-content: center;
   align-items: center;
   padding: 0 2em;
+}
+
+.project-card a {
+  font-style: italic;
 }
 
 .project-description h3 {
@@ -412,6 +422,4 @@ li.active-btn a {
   .email {
     font-size: 1em;
   }
-}
-
 }
